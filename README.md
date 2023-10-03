@@ -1,2 +1,1 @@
-# flutter-viper
-Flutter Viper Pattern Mobile
+# viper_architecture_pattern
