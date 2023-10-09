@@ -8,7 +8,7 @@ class HomePresenter with ChangeNotifier {
 
   Future<HomeRestResponseModel> fetchResponse() async {
     HomeRestResponseModel restResponseModel =
-        await _homeIterator.FetchPlaceHolderRestData();
+        await _homeIterator.fetchHomeRestData();
     return restResponseModel;
   }
 }

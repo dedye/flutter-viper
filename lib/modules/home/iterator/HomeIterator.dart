@@ -4,7 +4,7 @@ import 'package:viper_architecture_pattern/modules/home/entity/HomeResponseModel
 class HomeIterator {
   HomeRestService _homeRestService = HomeRestService();
 
-  Future<HomeRestResponseModel> FetchPlaceHolderRestData() async {
+  Future<HomeRestResponseModel> fetchHomeRestData() async {
     final response = await _homeRestService.get("https://jsonplaceholder.typicode.com/todos/1");
     return HomeRestResponseModel.fromJson(response);
   }
