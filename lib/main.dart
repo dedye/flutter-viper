@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:viper_architecture_pattern/modules/home/presenter/place_holder_presenter.dart';
-import 'package:viper_architecture_pattern/modules/home/view/home_view.dart';
+import 'package:viper_architecture_pattern/modules/home/presenter/HomePresenter.dart';
+import 'package:viper_architecture_pattern/modules/home/view/HomeView.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,9 +19,9 @@ class MyApp extends StatelessWidget {
       // home: HomeScreen(),
       home: MultiProvider(
         providers: [
-          ChangeNotifierProvider(create: (context) => PlaceHolderPresenter()),
+          ChangeNotifierProvider(create: (context) => HomePresenter()),
         ],
-        child: HomeScreen(),
+        child: HomeView(),
       ),
     );
   }
