@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'dart:async';
-import 'package:viper_architecture_pattern/utility/app_exceptions.dart';
+import 'package:viper_architecture_pattern/utility/AppExceptions.dart';
 
 class HomeRestService {
   final String _baseUrl = "";
