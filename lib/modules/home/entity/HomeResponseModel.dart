@@ -1,30 +1,16 @@
+import 'package:freezed_annotation/freezed_annotation.dart';
+part 'HomeRestResponseModel.freezed.dart';
+part 'HomeRestResponseModel.g.dart';
 
-class HomeRestResponseModel {
-  int? userId;
-  int? id;
-  String? title;
-  bool? completed;
+@unfreezed
+class HomeRestResponseModel with _$HomeRestResponseModel  {
+  factory HomeRestResponseModel({
+    required final Int userId,
+    required final Int id,
+    required final String title,
+    @Default(false) bool completed,
+  }) = _HomeRestResponseModel;
 
-  HomeRestResponseModel({
-      this.userId, 
-      this.id, 
-      this.title, 
-      this.completed});
-
-  HomeRestResponseModel.fromJson(dynamic json) {
-    userId = json["userId"];
-    id = json["id"];
-    title = json["title"];
-    completed = json["completed"];
-  }
-
-  Map<String, dynamic> toJson() {
-    var map = <String, dynamic>{};
-    map["userId"] = userId;
-    map["id"] = id;
-    map["title"] = title;
-    map["completed"] = completed;
-    return map;
-  }
-
+  factory HomeRestResponseModel.fromJson(Map<String, dynamic> json) =>
+      _$HomeRestResponseModelFromJson(json);
 }
