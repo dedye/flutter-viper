@@ -1,12 +1,13 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-part 'HomeRestResponseModel.freezed.dart';
-part 'HomeRestResponseModel.g.dart';
 
-@unfreezed
+part 'HomeResponseModel.freezed.dart';
+part 'HomeResponseModel.g.dart';
+
+@freezed
 class HomeRestResponseModel with _$HomeRestResponseModel  {
   factory HomeRestResponseModel({
-    required final Int userId,
-    required final Int id,
+    required final int userId,
+    required final int id,
     required final String title,
     @Default(false) bool completed,
   }) = _HomeRestResponseModel;
