@@ -1,5 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.viper_architecture_pattern">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
    <application
         android:label="viper_architecture_pattern"
         android:icon="@mipmap/ic_launcher">
